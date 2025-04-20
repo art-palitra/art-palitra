@@ -1,0 +1,52 @@
+.about-us {
+
+
+    position: relative;
+    font-size: 1.4rem;
+    width: 80%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-color{
+    width: 500px;
+}
+.about-color>.title {
+
+    font-style: italic;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+.about-color> p{
+    padding-top: 20px;
+}
+
+
+.title::after {
+    content: "";
+    display: block;
+    height: 5px;
+    /* толщина линии */
+    background: black;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    /* отступ вниз от текста */
+    left: 0;
+}
+
+.about-us > .imageParalax {
+    position: relative;
+    transition: transform 0.2s ease-out;
+    width: 200px;
+    transform: translateY(900px);
+}
+.imageParalax img {
+    position: absolute;
+    width: 500px;
+
+    
+}

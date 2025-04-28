@@ -26,6 +26,7 @@
 .bg-red {
     background-color: #E4281F;
     color: white;
+    
 }
 
 .bg-black {
@@ -51,4 +52,25 @@
 .bg-light {
     background-color: #F9FFD1;
     color: #00A3FF;
+}
+
+@media only screen and (max-width: 1100px) {
+    .grid-main {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(1, 100vh);
+        
+        width: 100vh;
+    }
+    
+    .grid {
+        
+        width: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(2, 50vh);
+        
+        
+    }
+    
 }

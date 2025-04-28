@@ -10,9 +10,11 @@
     justify-content: center;
     align-items: center;
 }
-.about-color{
+
+.about-color {
     width: 500px;
 }
+
 .about-color>.title {
 
     font-style: italic;
@@ -20,7 +22,8 @@
     display: inline-block;
     position: relative;
 }
-.about-color> p{
+
+.about-color>p {
     padding-top: 20px;
 }
 
@@ -38,15 +41,79 @@
     left: 0;
 }
 
-.about-us > .imageParalax {
+.about-us>.imageParalax {
     position: relative;
     transition: transform 0.2s ease-out;
     width: 200px;
-    transform: translateY(900px);
+    transform: translateY(1000px);
 }
+
 .imageParalax img {
     position: absolute;
     width: 500px;
 
-    
+
+}
+
+@media only screen and (max-width: 980px) {
+    .about-us {
+
+
+
+        width: 80%;
+        height: 60vh;
+        padding: 10%;
+
+    }
+
+    .about-us>.imageParalax {
+        position: relative;
+        transition: transform 0.2s ease-out;
+
+        transform: translateY(-50px);
+    }
+
+    .imageParalax img {
+        position: absolute;
+        width: 250px;
+
+
+
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .about-us {
+
+
+        position: relative;
+        font-size: 1.4rem;
+        width: 80%;
+        height: 120vh;
+
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-color {
+        width: 70vh;
+    }
+
+    .imageParalax img {
+        position: relative;
+        width: 250px;
+        right: -30vh;
+
+
+
+    }
+
+    .about-us>.imageParalax {
+        position: relative;
+        transition: transform 0.2s ease-out;
+
+        transform: translateY(430px);
+    }
+
 }

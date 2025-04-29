@@ -47,7 +47,7 @@
 
 .card-reasons {
 
-    width: 400px;
+    width: 100%;
     height: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -67,8 +67,8 @@
 @media only screen and (max-width: 760px) {
     .first {
         background-color: transparent;
-        width: 100vh;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
 
 
         margin-top: 20vh;
@@ -81,27 +81,43 @@
     }
 
     .head{
-        width: 80vh;
+        padding: 20px;
+        width: auto;
         margin-left: auto;
         margin-right: auto;
     }
     .about-text {
-        width: 80vh;
+        width: 100%;
         margin-top: 20px;
         margin-bottom: 20px;
+        font-size: 0.6rem;
+
+       
     }
+    .heading-reasons {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 20px;
+    }
+    
 
     .about-reasons {
         display: block;
         height: auto;
-        width: 60vh;
+        width: auto;
 
         margin-left: auto;
         margin-right: auto;
 
         font-weight: 500;
-        font-size: 1.3rem;
+        font-size: 1rem;
         text-align: center;
 
     }
+
+    .card-reasons>img {
+        width: 360px;
+    }
+    
 }

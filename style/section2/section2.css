@@ -12,7 +12,9 @@
 }
 
 .about-color {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
+    padding: 15px;
 }
 
 .about-color>.title {
@@ -58,8 +60,7 @@
 }
 
 
-
-@media only screen and (max-width: 450px) and (max-width: 720px) {
+@media (max-width:700px) {
     .about-us {
        
 
@@ -74,9 +75,16 @@
 
     }
 
+    .about-color {
+        max-width: 500px;
+        width: 100%;
+        padding: 15px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     
-
-
 
     .about-color>p {
         padding-top: 20px;
@@ -87,22 +95,18 @@
     .imageParalax img {
         position: relative;
         width: 250px;
-        right: 50vh;
+        left: 15vh;
 
 
 
-    }
-
-    .about-us>.imageParalax {
-        position: relative;
-        transition: transform 0.2s ease-out;
-
-        transform: translateY(630px);
     }
 
 }
 
-@media only screen and (max-width: 1000px) {
+
+
+
+@media (max-width: 1000px) {
     
     .about-color {
         width: auto;
@@ -110,10 +114,14 @@
         padding: 10px;
     }
 
+    .about-color > p {
+        font-size: 0.9rem;
+    }
+
     .imageParalax img {
         position: relative;
         width: 250px;
-        right: -20vh;
+        right: 10vh;
 
 
 
@@ -122,6 +130,7 @@
         position: relative;
         transition: transform 0.2s ease-out;
 
-        transform: translateY(650px);
+        transform: translateY(1350px);
     }
 }
+

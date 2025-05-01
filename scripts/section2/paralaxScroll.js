@@ -9,8 +9,8 @@ const patalaxScroll = (value) => {
 
 }
 
-if (document.documentElement.clientWidth < 900) {
+if (document.documentElement.clientWidth < 1100 ) {
     patalaxScroll(0.9)
 } else {
-    patalaxScroll(0.9)
+    patalaxScroll(1)
 }

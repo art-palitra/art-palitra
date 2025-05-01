@@ -7,14 +7,18 @@
     height: 100vh;
 
     display: flex;
-    justify-content: center;
+    
     align-items: center;
+
+
 }
 
 .about-color {
-    max-width: 500px;
-    width: 100%;
+    max-width: 600px;
+  
     padding: 15px;
+
+    margin-left: 40vh;
 }
 
 .about-color>.title {
@@ -52,9 +56,11 @@
     transform: translateY(1000px);
 }
 
-.imageParalax img {
+.scroll-img {
     position: absolute;
-    width: 350px;
+    width: 40vh;
+    right: 20%;
+    top: 120%;
 
 
 }
@@ -92,45 +98,62 @@
     }
     
 
-    .imageParalax img {
+    .scroll-img {
         position: relative;
         width: 250px;
         left: 15vh;
 
+        top: 80vh;
+        
+        
 
+        
 
     }
-
+    
 }
 
 
 
 
-@media (max-width: 1000px) {
+@media (min-width: 710px) and (max-width: 1100px) {
     
     .about-color {
         width: auto;
-       
+        align-items: start;
         padding: 10px;
+
+        max-width: 500px;
+
+        margin-left: 10vh;
     }
 
     .about-color > p {
         font-size: 0.9rem;
     }
 
-    .imageParalax img {
+    .scroll-img {
         position: relative;
         width: 250px;
-        right: 10vh;
+        right: 0%;
 
+        top: 150%;
 
 
     }
-    .about-us>.imageParalax {
-        position: relative;
-        transition: transform 0.2s ease-out;
 
-        transform: translateY(1350px);
-    }
+   
+    
 }
 
+@media (min-width: 1500px)  and (max-width: 1900px){
+    .scroll-img {
+        position: relative;
+        width: 250px;
+        right: 0%;
+
+        top: 30%;
+
+
+    }
+}

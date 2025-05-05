@@ -25,7 +25,7 @@
 }
 
 .about-color>.title {
-
+    color: black;
     font-style: italic;
     font-weight: bold;
     display: inline-block;
@@ -36,6 +36,8 @@
 
 .about-color>p {
     padding-top: 20px;
+    text-align: left;
+    
 }
 
 
@@ -97,6 +99,7 @@
 
     .about-color>p {
         padding-top: 20px;
+        
         font-size: 20px;
         line-height: 26px;
     }

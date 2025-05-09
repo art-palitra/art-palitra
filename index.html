@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./style/colorGrid/gridColorSguha.css">
     <link rel="stylesheet" href="./style/colorGrid/gridColorSmile.css">
     <link rel="stylesheet" href="./style/scrollSection/scrollSection.css">
+    <link rel="stylesheet" href="./style/PreviewSection/PreviewSection.css">
 
 
     <title>Палитра инструмент</title>
@@ -69,12 +70,12 @@
                 </div>
 
                 <div class="about-text">
-                    <h2>
+                    <h3>
                         Палитра — это новый взгляд на дизайнерскую работу. Сервис помогает легко и быстро подбирать
                         идеальные цветовые сочетания и создавать стильные, функциональные презентации. Делитесь
                         результатами
                         с командой, презентуйте клиентам — и сосредоточьтесь на главном: креативе.
-                    </h2>
+                    </h3>
                 </div>
 
 
@@ -172,12 +173,37 @@
         </section>
 
 
+
+
     </div>
 
+
+    <section class="section-preview">
+        <div class="preview-block">
+            <div class="preview-video">
+
+            </div>
+
+            <div class="preview-call">
+                <a href="#">
+                    <h1>Поробуйте</h1>
+
+
+                    <h1>прямо сейчас</h1>
+                </a>
+
+
+
+            </div>
+
+        </div>
+
+    </section>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
     <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+    <script src="./scripts/sectionLast/visible.js"></script>
     <script>
         gsap.registerPlugin(ScrollTrigger);
 
@@ -188,7 +214,7 @@
         // Проверка ширины экрана
         if (window.innerWidth > 1100) {
             gsap.to(sections, {
-                xPercent: -220 * (sections.length - 1),
+                xPercent: -120 * (sections.length - 1),
                 ease: "none",
                 scrollTrigger: {
                     trigger: ".block-scroll-courses",
@@ -196,6 +222,7 @@
                     scrub: 1,
                     snap: 0,
                     end: () => "+=" + document.querySelector(".block-scroll-courses").offsetWidth
+               
                 }
             });
         }

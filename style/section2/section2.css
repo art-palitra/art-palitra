@@ -100,8 +100,8 @@
     .about-color>p {
         padding-top: 20px;
         
-        font-size: 20px;
-        line-height: 26px;
+        font-size: 16px;
+        line-height: 22px;
     }
     
 
@@ -136,7 +136,8 @@
     }
 
     .about-color > p {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        font-weight: 600;
     }
 
     .scroll-img {

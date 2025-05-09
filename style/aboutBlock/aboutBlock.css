@@ -66,8 +66,9 @@
     font-weight: 500;
     color: #E4281F;
 }
-@media (max-width: 1000px){
-    .head{
+
+@media (max-width: 1000px) {
+    .head {
         padding: 20px;
         width: auto;
         margin-left: auto;
@@ -79,12 +80,13 @@
         margin-top: 20px;
         margin-bottom: 20px;
         font-size: 16px;
-        
-       
+
+
     }
 }
-@media only screen and (max-width: 760px)  {
-    .first { 
+
+@media only screen and (max-width: 760px) {
+    .first {
         background-color: transparent;
         width: 100%;
         height: 100%;
@@ -99,27 +101,29 @@
 
     }
 
-    .head{
+    .head {
         padding: 20px;
         width: auto;
         margin-left: auto;
         margin-right: auto;
     }
+
     .about-text {
         width: 100%;
         margin-top: 20px;
         margin-bottom: 20px;
-        font-size: 0.6rem;
+        font-size: 12px;
 
-       
+
     }
+
     .heading-reasons {
         text-align: center;
         font-size: 1rem;
         font-weight: 500;
         padding: 20px;
     }
-    
+
 
     .about-reasons {
         display: block;
@@ -138,7 +142,17 @@
     .card-reasons>img {
         width: 360px;
     }
-    
+
 }
 
 
+@media only screen and (max-width: 460px) {
+    .about-text {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 15px;
+
+
+    }
+}

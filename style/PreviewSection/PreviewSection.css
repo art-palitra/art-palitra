@@ -16,7 +16,7 @@
     height: auto;
     overflow: hidden;
 }
-.preview-video img{
+.preview-video video    {
     width: 100%;
     
 } 
